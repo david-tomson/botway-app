@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM botwayorg/botway:latest
 
 ### install packages ###
 ENV PKGS "zip unzip git curl npm py3-pip openssl openssl-dev build-base autoconf automake libtool gcc-doc python3-dev neofetch make wget gcc ca-certificates llvm nano vim ruby-full ruby-dev libffi-dev libgcc libssl1.1 zlib"

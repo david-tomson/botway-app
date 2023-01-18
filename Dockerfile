@@ -15,7 +15,6 @@ ARG MONGO_URL NEXT_PUBLIC_FULL EMAIL_FROM SENDGRID_API_KEY NEXT_PUBLIC_BW_SECRET
 RUN git clone https://github.com/abdfnx/botway && \
     cd botway/app && \
     go run ../scripts/dot/main.go >> .env && \
-    cat .env && \
     pnpm i && \
     pnpm build && \
     cp -rf .next package.json ../..

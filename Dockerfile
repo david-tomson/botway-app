@@ -11,8 +11,6 @@ RUN npm i -g npm@latest yarn@latest pnpm@latest
 
 ARG MONGO_URL NEXT_PUBLIC_FULL EMAIL_FROM SENDGRID_API_KEY NEXT_PUBLIC_BW_SECRET_KEY
 
-COPY main.go .
-
 ### build ###
 RUN git clone https://github.com/abdfnx/botway && \
     cd botway/app && \

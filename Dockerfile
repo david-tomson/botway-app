@@ -6,8 +6,8 @@ ENV PKGS "zip unzip git curl npm py3-pip openssl openssl-dev build-base autoconf
 RUN apk upgrade && \
     apk add --update $PKGS
 
-### nodejs package managers ###
-RUN npm i -g npm@latest yarn@latest pnpm@latest
+### install nodejs package managers and create-botway-bot ###
+RUN npm i -g npm@latest yarn@latest pnpm@latest create-botway-bot@latest
 
 ARG MONGO_URL NEXT_PUBLIC_FULL EMAIL_FROM SENDGRID_API_KEY NEXT_PUBLIC_BW_SECRET_KEY
 

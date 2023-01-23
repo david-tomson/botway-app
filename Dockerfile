@@ -17,7 +17,7 @@ RUN rm -rf gh*
 ### install nodejs package managers and create-botway-bot ###
 RUN npm i -g npm@latest yarn@latest pnpm@latest create-botway-bot@latest
 
-### update bundler ###
+### update bundler using gem ###
 RUN gem update bundler
 
 ### pyenv ###
